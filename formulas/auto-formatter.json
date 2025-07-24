@@ -1,0 +1,12 @@
+{
+  "name": "auto-formatter",
+  "description": "Automatically formats code after file changes.",
+  "version": "1.0.0",
+  "hooks": [
+    {
+      "event": "PostFileEdit",
+      "command": "prettier --write $FILE_PATH",
+      "name": "prettier-format"
+    }
+  ]
+}
